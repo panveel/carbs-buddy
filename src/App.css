@@ -1,0 +1,151 @@
+@import url(https://codepen.io/GreenSock/pen/gOWxmWG.css);
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+  border: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+    list-style: none;
+}
+
+menu,
+ol,
+ul {
+    padding-left: 0;
+}
+
+a {
+  text-decoration: none !important;
+  text-decoration-thickness: 8;
+  font-family:  'Nunito Sans', sans-serif !important;
+}
+
+html {
+  -webkit-text-size-adjust: none; 
+  text-size-adjust: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+        scroll-behavior: smooth;
+  }
+}
+
+
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+    cursor: pointer;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+
+body {
+  background-color: #F8FCFC;
+  box-sizing: border-box;
+  color: #020C0B;
+  font-family:  'Nunito Sans', sans-serif !important;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  box-sizing: border-box;
+  grid-gap: 2rem;
+  height: 100vh;
+}
+
+.page-wrapper  > section {
+  height: inherit;
+}
+
+@media (max-width: 768px) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px 1fr;
+    box-sizing: border-box;
+    grid-gap: 2rem;
+  }
+
+  .page-wrapper  > nav {
+    grid-row: 2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 16px 16px 0 0;
+    z-index: 1;
+  }
+
+  .page-wrapper  > section {
+    height: fit-content;
+    padding-bottom: 10rem;
+  }
+}
+
