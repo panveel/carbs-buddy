@@ -16,3 +16,5 @@ Open [http://localhost:3500](http://localhost:3500) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### [Live Demo](https://carbs-buddy.netlify.app/)
